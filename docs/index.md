@@ -1,7 +1,6 @@
 #Deploying Cloudera manager and CDH 5 on EMC Isilon
 ##Using VMware Big Data Extensions
 
----
 
 ##Abstract
 This white paper describes how to create a Hadoop environment utilizing Cloudera Manager and an EMC Isilon Scale-Out NAS for HDFS accessible shared storage. VMware Big Data Extensions is used to provision and manage the compute resources. 
@@ -102,6 +101,8 @@ The test environment used for this document consists of the following software v
 **Hosts**
 
 A typical Hadoop environment composed of many types of hosts. Below is a description of these hosts.
+
+![Hadoop Environment](cloudera/images/hadoop-environment.jpg)
 
 
 **List of Hosts in Hadoop Environments**
