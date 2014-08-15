@@ -105,6 +105,7 @@ A typical Hadoop environment composed of many types of hosts. Below is a descrip
 ![Hadoop Environment](cloudera/images/hadoop-environment.jpg)
 
 
+
 **List of Hosts in Hadoop Environments**
 
 Host						| Description
