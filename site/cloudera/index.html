@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cloudera - EMC Hadoop Starter Kits</title>
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
+  
+
+  <script type="text/javascript" src="../js/theme.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+  
+
+  <style>
+    body {font-size: 90%;}
+    pre, code {font-size: 100%;}
+    h3, h4, h5, h6 {color: #2980b9; font-weight: 300}
+  </style>
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> EMC Hadoop Starter Kits</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+       <ul class="current">
+
+    <li class="toctree-l1 ">
+        <a class="" href="..">HSK info</a>
+        
+    </li>
+
+    <li class="toctree-l1 current">
+        <a class="current" href="./">Cloudera</a>
+        
+            <ul>
+            
+                <li class="toctree-l2"><a href="#deploying-cloudera-manager-and-cdh-5-on-emc-isilon">Deploying Cloudera manager and CDH 5 on EMC Isilon</a></li>
+                
+                    <li><a class="toctree-l3" href="#using-vmware-big-data-extensions">Using VMware Big Data Extensions</a></li>
+                
+                    <li><a class="toctree-l3" href="#cloudera-cdh-and-cloudera-manager">Cloudera CDH and Cloudera Manager</a></li>
+                
+                    <li><a class="toctree-l3" href="#isilon-scale-out-nas-for-hdfs">Isilon Scale-Out NAS for HDFS</a></li>
+                
+                    <li><a class="toctree-l3" href="#cloudera-and-emc-joint-support-statement">Cloudera and EMC joint support statement</a></li>
+                
+                    <li><a class="toctree-l3" href="#environment">Environment</a></li>
+                
+            
+            </ul>
+        
+    </li>
+
+</ul>
+
+
+
+
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="icon icon-reorder"></i>
+        <a href=".."></a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    <li>Cloudera</li>
+      <li class="wy-breadcrumbs-aside">
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <p><strong>THIS IS A DRAFT</strong></p>
+<h1 id="deploying-cloudera-manager-and-cdh-5-on-emc-isilon">Deploying Cloudera manager and CDH 5 on EMC Isilon</h1>
+<h2 id="using-vmware-big-data-extensions">Using VMware Big Data Extensions</h2>
+<h2 id="cloudera-cdh-and-cloudera-manager">Cloudera CDH and Cloudera Manager</h2>
+<p>CDH (Cloudera’s Distribution Including Apache Hadoop) is the world’s most complete, tested, and widely deployed distribution of Apache Hadoop. CDH is 100% open source and is the only Hadoop solution to offer batch processing, interactive SQL, and interactive search as well as enterprise-grade continuous availability. More enterprises have downloaded CDH than all other distributions combined.</p>
+<p>CDH delivers the core elements of Hadoop – scalable storage and distributed computing – as well as all of the necessary enterprise capabilities such as security, high availability and integration with a broad range of hardware and software solutions.</p>
+<p>Cloudera Manager is the industry’s first and most sophisticated management application for Apache Hadoop. Cloudera Manager sets the standard for enterprise deployment by delivering granular visibility into and control over every part of the Hadoop cluster — empowering operators to improve performance, enhance quality of service, increase compliance and reduce administrative costs.</p>
+<p>Cloudera Manager is designed to make administration of Hadoop simple and straightforward, at any scale. With Cloudera Manager, you can easily deploy and centrally operate the complete Hadoop stack. The application automates the installation process, reducing deployment time from weeks to minutes; gives you a cluster-wide, real-time view of nodes and services running; provides a single, central console to enact configuration changes across your cluster; and incorporates a full range of reporting and diagnostic tools to help you optimize performance and utilization.</p>
+<p>More information on Cloudera can be found here:</p>
+<p><a href="http://www.cloudera.com/">http://www.cloudera.com/</a></p>
+<h2 id="isilon-scale-out-nas-for-hdfs">Isilon Scale-Out NAS for HDFS</h2>
+<p>EMC Isilon is the only scale-out NAS platform natively integrated with the Hadoop Distributed File System (HDFS). Using HDFS as an over-the-wire protocol, you can deploy a powerful, efficient, and flexible data storage and analytics ecosystem.</p>
+<p>In addition to native integration with HDFS, EMC Isilon storage easily scales to support massively large Hadoop analytics projects. Isilon scale-out NAS also offers unmatched simplicity, efficiency, flexibility, and reliability that you need to maximize the value of your Hadoop data storage and analytics workflow investment.</p>
+<p><strong>Overview of Isilon Scale-Out NAS for Big Data</strong></p>
+<p>The EMC Isilon scale-out platform combines modular hardware with unified software to provide the storage foundation for data analysis. Isilon scale-out NAS is a fully distributed system that consists of nodes of modular hardware arranged in a cluster. The distributed Isilon OneFS operating system combines the memory, I/O, CPUs, and disks of the nodes into a cohesive storage unit to present a global namespace as a single file system.</p>
+<p>The nodes work together as peers in a shared-nothing hardware architecture with no single point of failure. Every node adds capacity, performance, and resiliency to the cluster, and each node acts as a Hadoop namenode and datanode. The namenode daemon is a distributed process that runs on all the nodes in the cluster. A compute client can connect to any node through HDFS.</p>
+<p>As nodes are added, the file system expands dynamically and redistributes data, eliminating the work of partitioning disks and creating volumes. The result is a highly efficient and resilient storage architecture that brings all the advantages of an enterprise scale-out NAS system to storing data for analysis.</p>
+<p>Unlike traditional storage, Hadoop's ratio of CPU, RAM, and disk space depends on the workload—factors that make it difficult to size a Hadoop cluster before you have had a chance to measure your MapReduce workload. Expanding data sets also makes sizing decisions upfront problematic. Isilon scale-out NAS lends itself perfectly to this scenario: Isilon scale-out NAS lets you increase CPUs, RAM, and disk space by adding nodes to dynamically match storage capacity and performance with the demands of a dynamic Hadoop workload.</p>
+<p>An Isilon cluster optimizes data protection. OneFS more efficiently and reliably protects data than HDFS. The HDFS protocol, by default, replicates a block of data three times. In contrast, OneFS stripes the data across the cluster and protects the data with forward error correction codes, which consume less space than replication with better protection.</p>
+<h2 id="cloudera-and-emc-joint-support-statement">Cloudera and EMC joint support statement</h2>
+<p>EMC Isilon and Cloudera are pleased to communicate a business collaboration and intention to enable joint support for EMC Isilon scale-­‐out NAS and Cloudera Enterprise products to bring the value of Cloudera Enterprise to customers using EMC Isilon storage.</p>
+<p>EMC Isilon Scale‐Out NAS storage for Hadoop currently supports the Apache Hadoop Distributed File System (HDFS) protocol. CDH is 100% open source and is the only Hadoop solution to offer batch processing, interactive SQL and interactive search, as well as enterprise‐grade continuous availability.</p>
+<p>EMC Isilon allows a customer to start using Hadoop now by using already existing data thus eliminating extra copies and reducing associated CAPEX costs for additional storage capacity. In addition, EMC Isilon is the only Hadoop storage solution that allows you access to the data via NAS (i.e. SMB) or HDFS protocols as well as providing a  POSIX‐Compliant file system for regulated environments.</p>
+<p>EMC Isilon and Cloudera are now jointly working to support the following two scenarios:</p>
+<ul>
+<li>Customers running Cloudera Enterprise on EMC Isilon NAS products.</li>
+</ul>
+<p>Customers will be able to leverage the full Cloudera Enterprise offering on their existing data sets stored in EMC Isilon. Cloudera Enterprise is a subscription offering that combines CDH with Cloudera Manager for system management, Cloudera Navigator for data management, technical support, indemnity, and open source advocacy. Customers will be able to simplify storage management and reduce overall costs by managing storage and compute independently, with new server hardware purchases required only for additional compute in the case of an existing EMC Isilon installation.</p>
+<ul>
+<li>Customers wishing to integrate existing Cloudera Enterprise and EMC Isilon clusters. </li>
+</ul>
+<p>Customers will be able to integrate existing EMC Isilon clusters with existing HDFS‐storage based Cloudera Enterprise clusters by using existing Hadoop tools built for data movement. This scenario will allow customers to more easily ingest data into both systems, as well as enable use cases such as online or remote backup and disaster recovery.</p>
+<p>EMC Isilon and Cloudera are currently working on product development and support models, and intend to have a supported joint offering in the market in the first half of 2014.</p>
+<p>In addition, EMC Isilon and Cloudera are working together to advance the ongoing joint roadmap for Cloudera Enterprise on EMC Isilon Scale‐Out NAS for subsequent releases of CDH, Cloudera manager, Cloudera Navigator and OneFS software.</p>
+<p>This guide illustrates the first scenario. Using an existing Isilon cluster to integrate with Cloudera manager to allow CDH access to existing data sets located in the Isilon cluster.</p>
+<h2 id="environment">Environment</h2>
+<p><strong>Versions</strong></p>
+<p>The test environment used for this document consists of the following software versions:</p>
+<ul>
+<li>Cloudera Manager 5.1.0</li>
+<li>Cloudera CDH 5.1.0</li>
+<li>Isilon OneFS 7.1.1 with patch-130611</li>
+<li>VMware vSphere Enterprise 5.5.0</li>
+<li>VMware Big Data Extensions 2.0</li>
+</ul>
+<p><strong>Hosts</strong></p>
+<p>A typical Hadoop environment composed of many types of hosts. Below is a description of these hosts.</p>
+<p><img alt="Hadoop Environment" src="images/hadoop-environment.jpg" /></p>
+<p><strong>List of Hosts in Hadoop Environments</strong></p>
+<table>
+<thead>
+<tr>
+<th>Host</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>DNS/DHCP Server</td>
+<td>It is recommended to have a DNS and DHCP server that you can control. This will be used by all other hosts for DNS and DHCP services.</td>
+</tr>
+<tr>
+<td>VMware vCenter</td>
+<td>VMware vCenter will manage all ESXi hosts and their VMs. It is required for Big Data Extensions (BDE).</td>
+</tr>
+<tr>
+<td>VMware Big Data Extensions</td>
+<td>This will run the Serengeti components to assist in deploying Hadoop clusters.</td>
+</tr>
+<tr>
+<td>VMware ESXi</td>
+<td>Physical machines will run the VMware ESXi operating system to allow virtual machines to run in them.</td>
+</tr>
+<tr>
+<td>Linux workstation</td>
+<td>You should have a Linux workstation with a GUI that you can use to control everything with.</td>
+</tr>
+<tr>
+<td>Isilon nodes</td>
+<td>You will need one or more Isilon Scale-Out NAS nodes. For functional testing, you can use a single Isilon OneFS Simulator node instead of the Isilon appliance. The nodes will be clustered together into an Isilon Cluster. Isilon nodes run the OneFS operating system.</td>
+</tr>
+<tr>
+<td>Isilon InsightIQ</td>
+<td>This is optional licensed software from Isilon and can be used to monitor the health and performance of your Isilon cluster. It is recommend for any performance testing.</td>
+</tr>
+<tr>
+<td>Cloudera Manager</td>
+<td>A dedicated host will run the Cloudera Manager application and the Cloudera Management Services. This will deploy and monitor the Cloudera CDH Hadoop components.</td>
+</tr>
+<tr>
+<td>Cloudera CDH Hadoop Master</td>
+<td>This host will the YARN Resource Manager, Job History Server, Hue Server, Hive Metastore Server, etc. In general, it will run all "master" services except for the HDFS Name Node.</td>
+</tr>
+<tr>
+<td>Cloudera CDH Hadoop Name Node</td>
+<td>This host will only run the CDH Name Node. This will only be used during the installation process. Once you reconfigure the CDH components to use Isilon for HDFS, this node will be idle.</td>
+</tr>
+<tr>
+<td>Cloudera CDH</td>
+<td>There will be any number of worker nodes, depending on the compute requirements. Each node will run the YARN Node Manager, Impala Daemon, HBase Region Server, etc. During the installation process, the first 3 of these nodes will run the HDFS Data Node but these will become idle like the CDH HDFS Name Node.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>Copyright © 2014 EMC Corporation. All Rights Reserved. 
+EMC believes the information in this publication is accurate as of its publication date. The information is subject to change without notice. 
+The information in this publication is provided “as is.” EMC Corporation makes no representations or warranties of any kind with respect to the information in this publication, and specifically disclaims implied warranties of merchantability or fitness for a particular purpose. 
+Use, copying, and distribution of any EMC software described in this publication requires an applicable software license. 
+For the most up-to-date listing of EMC product names, see EMC Corporation Trademarks on EMC.com. 
+VMware and vSphere are registered trademarks or trademarks of VMware, Inc. in the United States and/or other jurisdictions. All other trademarks used herein are the property of their respective owners. </p>
+
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href=".." class="btn btn-neutral" title="HSK info"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+    <!-- Copyright etc -->
+    </p>
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a>, using the <a href="https://github.com/snide/sphinx_rtd_theme">Read the Docs theme</a>.
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+<div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      <a class="icon icon-github" style="float: left; color: #fcfcfc"> GitHub</a>
+      <span><a href="" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      <span style="margin-left: 15px"><a href="" style="color: #fcfcfc">Next &raquo;</a></span>
+    </span>
+</div>
+</body>
+</html>
